@@ -24,14 +24,14 @@ include 'data.php';
     <header></header>
     <main>
         <section id="card-section">
-            <div id="card">
-                <?php foreach($albums as $album): ?> <!-- CICLO FOR QUA -->
-                <img src="<?= $album['poster'] ?>" alt="album_cover">
-                <h1><?= $album['title'] ?></h1>
-                <h5><?= $album['author'] ?></h5>
-                <h6><?= $album['year'] ?></h6>
-                <?php endforeach; ?> <!-- FINE CICLO FOR QUA -->
-            </div>
+            <?php foreach($albums as $album): ?> <!-- CICLO FOR QUA -->
+                <div id="card">
+                    <img src="<?= $album['poster'] ?>" alt="album_cover">
+                    <h1><?= $album['title'] ?></h1>
+                    <h5><?= $album['author'] ?></h5>
+                    <h6><?= $album['year'] ?></h6>
+                </div>
+            <?php endforeach; ?> <!-- FINE CICLO FOR QUA -->
         </section>
     </main>
 </body>
