@@ -1,0 +1,8 @@
+<?php
+
+require __DIR__ . '/../includes/data.php';
+
+header('Content-Type: application/json');
+echo json_encode($albums);
+
+?>
